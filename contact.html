@@ -1,31 +1,60 @@
+<!-- contact.html -->
 <!DOCTYPE html>
-<html lang="ar">
+<html lang="ar" dir="rtl">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>تواصل - TOJI</title>
+  <title>TOJI - تواصل</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <nav>
+  <nav id="navbar">
     <div class="logo">TOJI</div>
     <div class="nav-links">
       <a href="index.html">الرئيسية</a>
       <a href="about.html">عني</a>
       <a href="projects.html">المشاريع</a>
-      <a href="contact.html">تواصل</a>
+      <a href="contact.html" class="active">تواصل</a>
     </div>
   </nav>
 
-  <section class="contact">
-    <h2>تواصل معي</h2>
-    <p>كلمني واتساب: 01014994070</p>
-    <p>ايميل: toji@dev.com</p>
-    <a href="https://wa.me/201014994070" class="btn whatsapp">واتساب</a>
+  <section class="contact-section">
+    <div class="contact-wrapper">
+      <h2 class="section-title">تواصل معي</h2>
+      <p class="contact-text">عندك فكرة مشروع او استفسار؟ كلمني دلوقتي</p>
+      
+      <div class="contact-methods">
+        <div class="contact-method">
+          <div class="method-icon">📱</div>
+          <div class="method-info">
+            <h4>واتساب</h4>
+            <p>01014994070</p>
+          </div>
+        </div>
+        
+        <div class="contact-method">
+          <div class="method-icon">📧</div>
+          <div class="method-info">
+            <h4>ايميل</h4>
+            <p>toji@developer.com</p>
+          </div>
+        </div>
+        
+        <div class="contact-method">
+          <div class="method-icon">📍</div>
+          <div class="method-info">
+            <h4>الموقع</h4>
+            <p>مصر - القاهرة</p>
+          </div>
+        </div>
+      </div>
+      
+      <a href="https://wa.me/201014994070" class="whatsapp-btn">📱 كلمني على واتساب</a>
+    </div>
   </section>
 
   <footer>
-    <p>TOJI © 2024</p>
+    <p>© 2024 TOJI. جميع الحقوق محفوظة</p>
   </footer>
 
   <script src="script.js"></script>
