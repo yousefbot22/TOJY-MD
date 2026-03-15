@@ -1,34 +1,61 @@
 <!DOCTYPE html>
 <html lang="ar">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>عن TOJI</title>
-<link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TOJI - عني</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <!-- شريط التنقل -->
+  <nav id="navbar">
+    <div class="logo">TOJI</div>
+    <div class="nav-links">
+      <a href="index.html">الرئيسية</a>
+      <a href="about.html" class="active">عنّي</a>
+      <a href="projects.html">المشاريع</a>
+      <a href="contact.html">تواصل معي</a>
+    </div>
+    <div class="menu-btn">
+      <i class="fas fa-bars"></i>
+    </div>
+  </nav>
 
-<nav>
-  <div class="logo">TOJI</div>
-  <div class="nav-links">
-    <a href="index.html">الرئيسية</a>
-    <a href="about.html">عنّي</a>
-    <a href="projects.html">المشاريع</a>
-    <a href="contact.html">تواصل معي</a>
-  </div>
-</nav>
+  <!-- قسم عني -->
+  <section class="about" id="about">
+    <div class="about-image">
+      <div class="image-container">
+        <img src="https://via.placeholder.com/600x800" alt="TOJI">
+      </div>
+    </div>
+    <div class="about-content">
+      <h2 class="section-title" style="text-align:right; margin-bottom:30px;">من هو TOJI؟</h2>
+      <p class="about-text">أنا مطور ومصمم مواقع شغوف بتقديم حلول تقنية مبتكرة. أعمل على تحويل الأفكار إلى منتجات رقمية مذهلة تجمع بين التصميم الجميل والأداء القوي. خبرتي تمتد لأكثر من 5 سنوات في مجال تطوير الويب وتطبيقات الجوال.</p>
+      <p class="about-text" style="margin-bottom:40px;">أؤمن بأن التصميم الجيد هو الذي يحل المشاكل بطريقة إبداعية، ولذلك أركز دائمًا على تجربة المستخدم وسهولة الاستخدام في جميع مشاريعي.</p>
+      
+      <div class="stats">
+        <div class="stat-item">
+          <div class="stat-number">+50</div>
+          <div class="stat-label">مشروع مكتمل</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number">+30</div>
+          <div class="stat-label">عميل سعيد</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number">+5</div>
+          <div class="stat-label">سنوات خبرة</div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-<section class="hero">
-  <h1>عن TOJI Developer</h1>
-  <p class="typing">نحن نبتكر الحلول التقنية باحترافية وابداع.</p>
-</section>
+  <!-- الفوتر -->
+  <footer>
+    <p>© 2024 TOJI Developer. جميع الحقوق محفوظة</p>
+  </footer>
 
-<section>
-  <h2 class="section-title">قصتي</h2>
-  <p style="max-width:700px;margin:auto;line-height:1.8;font-size:18px;">
-    أنا مطور ومصمم مواقع وتطبيقات، أركز على تجربة المستخدم وأدوات التصميم الحديثة لإنشاء مشاريع مذهلة لكل الأجهزة.
-  </p>
-</section>
-
+  <script src="script.js"></script>
 </body>
 </html>
