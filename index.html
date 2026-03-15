@@ -7,11 +7,10 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>TOJY MD | Official Developer</title>
+<title>TOJY MD | Developer</title>
 
-<link rel="stylesheet" href="contact.css">
+<link rel="stylesheet" href="style.css">
 
-<link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;700;900&display=swap" rel="stylesheet">
 
 <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
@@ -21,7 +20,6 @@
 <body>
 
 <div id="particles-js"></div>
-<div class="glow" id="glow"></div>
 
 <nav>
 
@@ -42,10 +40,10 @@ TOJY BOT
 
 <section class="hero">
 
-<h1>TOJY MD</h1>
+<h1 id="typing"></h1>
 
-<p class="typing">
-Official Developer & Bot Creator
+<p class="subtitle">
+Official Developer – Bot & Web Developer
 </p>
 
 <a href="#projects" class="btn">
@@ -57,7 +55,7 @@ Official Developer & Bot Creator
 
 <section id="about">
 
-<h2 class="section-title">
+<h2 class="title">
 من أنا
 </h2>
 
@@ -66,11 +64,11 @@ Official Developer & Bot Creator
 <div class="card">
 
 <h3>
-مطوّر بوتات
+تطوير بوتات
 </h3>
 
 <p>
-متخصص في تطوير بوتات واتساب وأنظمة الأتمتة والخدمات الذكية.
+بناء بوتات واتساب احترافية وأنظمة أتمتة متقدمة.
 </p>
 
 </div>
@@ -82,7 +80,7 @@ Official Developer & Bot Creator
 </h3>
 
 <p>
-إنشاء مواقع احترافية سريعة وآمنة بتصميم حديث.
+تصميم مواقع حديثة وسريعة وآمنة.
 </p>
 
 </div>
@@ -94,7 +92,7 @@ Official Developer & Bot Creator
 </h3>
 
 <p>
-تحويل الأفكار التقنية إلى مشاريع حقيقية.
+تحويل الأفكار إلى مشاريع رقمية حقيقية.
 </p>
 
 </div>
@@ -106,7 +104,7 @@ Official Developer & Bot Creator
 
 <section id="projects">
 
-<h2 class="section-title">
+<h2 class="title">
 المشاريع
 </h2>
 
@@ -119,7 +117,7 @@ TOJY BOT
 </h3>
 
 <p>
-بوت خدمات متكامل لإدارة الجروبات وتحميل الوسائط وأدوات متعددة.
+بوت خدمات متكامل لإدارة الجروبات وتحميل الوسائط.
 </p>
 
 </div>
@@ -131,7 +129,7 @@ TOJY BOT
 </h3>
 
 <p>
-تصميم مواقع شخصية ومتاجر إلكترونية احترافية.
+إنشاء مواقع شخصية ومتاجر إلكترونية.
 </p>
 
 </div>
@@ -139,11 +137,11 @@ TOJY BOT
 <div class="card">
 
 <h3>
-مشاريع مستقبلية
+أنظمة مستقبلية
 </h3>
 
 <p>
-تطوير تطبيقات وأنظمة ذكية جديدة.
+تطوير أدوات وأفكار تقنية جديدة.
 </p>
 
 </div>
@@ -155,27 +153,25 @@ TOJY BOT
 
 <section id="contact">
 
-<div class="contact">
+<div class="contact-box">
 
 <h2>
 تواصل معي
 </h2>
 
 <p>
-لو عايز بوت أو موقع احترافي تواصل معي مباشرة.
+لإنشاء بوت أو موقع احترافي.
 </p>
 
-<a class="whatsapp"
-href="https://wa.me/201014994070">
-
+<a href="https://wa.me/201014994070" class="whatsapp">
 تواصل عبر واتساب
-
 </a>
 
 </div>
 
 </section>
 
+<button id="topBtn">↑</button>
 
 <footer>
 
@@ -183,35 +179,8 @@ TOJY MD © 2026
 
 </footer>
 
-
-<script>
-
-particlesJS("particles-js",{
-
-particles:{
-number:{value:80},
-size:{value:3},
-color:{value:"#ffffff"},
-line_linked:{
-enable:true,
-opacity:0.2
-},
-move:{speed:1}
-}
-
-});
-
-
-document.addEventListener("mousemove",(e)=>{
-
-const glow=document.getElementById("glow");
-
-glow.style.left=e.clientX+"px";
-glow.style.top=e.clientY+"px";
-
-});
-
-</script>
+<script src="script.js"></script>
 
 </body>
+
 </html>
