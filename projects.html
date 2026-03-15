@@ -1,42 +1,61 @@
+<!-- projects.html -->
 <!DOCTYPE html>
-<html lang="ar">
+<html lang="ar" dir="rtl">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>المشاريع - TOJI</title>
+  <title>TOJI - المشاريع</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <nav>
+  <nav id="navbar">
     <div class="logo">TOJI</div>
     <div class="nav-links">
       <a href="index.html">الرئيسية</a>
       <a href="about.html">عني</a>
-      <a href="projects.html">المشاريع</a>
+      <a href="projects.html" class="active">المشاريع</a>
       <a href="contact.html">تواصل</a>
     </div>
   </nav>
 
-  <section class="projects">
-    <h2>مشاريعي</h2>
-    <div class="grid">
-      <div class="card">
+  <section>
+    <h2 class="section-title">مشاريعي</h2>
+    <div class="projects-grid">
+      <div class="project-item">
         <h3>متجر الكتروني</h3>
-        <p>متجر لبيع الملابس</p>
+        <div class="tech">HTML - CSS - JS</div>
+        <p>متجر متكامل لبيع الملابس مع سلة مشتريات ولوحة تحكم</p>
       </div>
-      <div class="card">
+      <div class="project-item">
         <h3>تطبيق توصيل</h3>
-        <p>تطبيق طلبات طعام</p>
+        <div class="tech">React Native</div>
+        <p>تطبيق لطلب وتوصيل الطعام مع تتبع الطلب مباشرة</p>
       </div>
-      <div class="card">
+      <div class="project-item">
         <h3>موقع شركة</h3>
-        <p>موقع رسمي لشركة</p>
+        <div class="tech">WordPress</div>
+        <p>موقع رسمي لشركة عقارات مع نظام ادارة محتوى متكامل</p>
+      </div>
+      <div class="project-item">
+        <h3>منصة تعليمية</h3>
+        <div class="tech">Vue.js - Firebase</div>
+        <p>منصة لدورات البرمجة مع نظام دخول ومتابعة تقدم</p>
+      </div>
+      <div class="project-item">
+        <h3>لوحة تحكم</h3>
+        <div class="tech">React - Node.js</div>
+        <p>نظام ادارة وتحليلات لشركة تسويق الكتروني</p>
+      </div>
+      <div class="project-item">
+        <h3>تطبيق موسيقى</h3>
+        <div class="tech">Flutter</div>
+        <p>تطبيق استماع للموسيقى مع قوائم تشغيل واشعارات</p>
       </div>
     </div>
   </section>
 
   <footer>
-    <p>TOJI © 2024</p>
+    <p>© 2024 TOJI. جميع الحقوق محفوظة</p>
   </footer>
 
   <script src="script.js"></script>
