@@ -1,50 +1,79 @@
 <!DOCTYPE html>
 <html lang="ar">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>TOJI Developer</title>
-<link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TOJI - الصفحة الرئيسية</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
-<!-- navbar -->
-<nav>
-  <div class="logo">TOJI</div>
-  <div class="nav-links">
-    <a href="index.html">الرئيسية</a>
-    <a href="about.html">عنّي</a>
-    <a href="projects.html">المشاريع</a>
-    <a href="contact.html">تواصل معي</a>
-  </div>
-</nav>
-
-<!-- hero -->
-<section class="hero">
-  <h1>مرحبًا بك في TOJI Developer</h1>
-  <div class="typing" id="typing"></div>
-  <a href="contact.html" class="btn">ابدأ المشروع</a>
-</section>
-
-<!-- services -->
-<section>
-  <h2 class="section-title">خدماتنا</h2>
-  <div class="grid">
-    <div class="card">
-      <h3>تصميم مواقع</h3>
-      <p>تصاميم احترافية وسلسة لجميع الأجهزة.</p>
+  <!-- شريط التنقل -->
+  <nav id="navbar">
+    <div class="logo">TOJI</div>
+    <div class="nav-links">
+      <a href="index.html" class="active">الرئيسية</a>
+      <a href="about.html">عنّي</a>
+      <a href="projects.html">المشاريع</a>
+      <a href="contact.html">تواصل معي</a>
     </div>
-    <div class="card">
-      <h3>برمجة تطبيقات</h3>
-      <p>تطبيقات مرنة وعالية الأداء لجميع المنصات.</p>
+    <div class="menu-btn">
+      <i class="fas fa-bars"></i>
     </div>
-    <div class="card">
-      <h3>تحسين الأداء</h3>
-      <p>رفع سرعة الموقع وتجربة المستخدم لأقصى حد.</p>
-    </div>
-  </div>
-</section>
+  </nav>
 
-<script src="script.js"></script>
+  <!-- القسم الرئيسي -->
+  <section class="hero" id="home">
+    <div class="bg-circles">
+      <div class="circle circle1"></div>
+      <div class="circle circle2"></div>
+    </div>
+    <div class="hero-content">
+      <h1>مرحبًا، أنا <span>TOJI</span><br>مطور ومصمم مواقع</h1>
+      <p class="typing-text"></p>
+      <div class="hero-btns">
+        <a href="contact.html" class="btn btn-primary">ابدأ مشروعك</a>
+        <a href="projects.html" class="btn btn-outline">شاهد أعمالي</a>
+      </div>
+    </div>
+    <div class="hero-image">
+      <div class="floating-shape"></div>
+    </div>
+  </section>
+
+  <!-- قسم الخدمات -->
+  <section class="services" id="services">
+    <h2 class="section-title">خدماتي</h2>
+    <div class="services-grid">
+      <div class="service-card">
+        <div class="service-icon">
+          <i class="fas fa-code"></i>
+        </div>
+        <h3>تطوير مواقع</h3>
+        <p>مواقع احترافية متجاوبة مع جميع الأجهزة باستخدام أحدث التقنيات</p>
+      </div>
+      <div class="service-card">
+        <div class="service-icon">
+          <i class="fas fa-mobile-alt"></i>
+        </div>
+        <h3>تطبيقات جوال</h3>
+        <p>تطبيقات عالية الأداء تعمل على Android و iOS بسلاسة</p>
+      </div>
+      <div class="service-card">
+        <div class="service-icon">
+          <i class="fas fa-paint-brush"></i>
+        </div>
+        <h3>تصميم واجهات</h3>
+        <p>تصاميم إبداعية تركز على تجربة المستخدم وسهولة الاستخدام</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- الفوتر -->
+  <footer>
+    <p>© 2024 TOJI Developer. جميع الحقوق محفوظة</p>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
