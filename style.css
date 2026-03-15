@@ -2,128 +2,288 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: Arial, sans-serif;
+  font-family: 'Segoe UI', 'Arial', sans-serif;
 }
 
 body {
-  background: #000;
-  color: #fff;
+  background: #0c0c0c;
+  color: #e0e0e0;
 }
 
+/* ===== شريط التنقل ===== */
 nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px 10%;
-  background: #111;
+  padding: 15px 10%;
+  background: #1a1a1a;
+  border-bottom: 2px solid #00ff88;
+  position: sticky;
+  top: 0;
+  z-index: 100;
 }
 
 .logo {
-  font-size: 24px;
-  font-weight: bold;
-  color: #ff4d94;
+  font-size: 28px;
+  font-weight: 900;
+  color: #00ff88;
+  letter-spacing: 2px;
+  text-transform: uppercase;
 }
 
 .nav-links a {
   color: #fff;
   text-decoration: none;
-  margin-left: 20px;
+  margin-left: 25px;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 14px;
+  letter-spacing: 1px;
+  transition: 0.3s;
 }
 
 .nav-links a:hover {
-  color: #ff4d94;
+  color: #00ff88;
 }
 
+/* ===== الاقسام ===== */
 section {
-  padding: 80px 10%;
+  padding: 100px 10%;
   text-align: center;
-  min-height: 70vh;
+  min-height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* ===== الرئيسية ===== */
+.hero {
+  background: linear-gradient(rgba(0,0,0,0.9), rgba(0,0,0,0.9)), url('https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=500');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
 }
 
 h1 {
-  font-size: 60px;
+  font-size: 80px;
+  font-weight: 900;
+  color: #00ff88;
+  text-transform: uppercase;
+  letter-spacing: 5px;
   margin-bottom: 20px;
-  color: #ff4d94;
+  text-shadow: 0 0 20px rgba(0,255,136,0.3);
 }
 
-h2 {
-  font-size: 40px;
-  margin-bottom: 40px;
-  color: #ff4d94;
-}
-
-p {
-  font-size: 18px;
-  margin-bottom: 20px;
-  line-height: 1.6;
-  color: #ccc;
+.hero p {
+  font-size: 24px;
+  color: #fff;
+  letter-spacing: 2px;
+  margin-bottom: 30px;
 }
 
 .btn {
   display: inline-block;
-  padding: 12px 30px;
-  background: #ff4d94;
-  color: #fff;
+  padding: 15px 40px;
+  background: transparent;
+  color: #00ff88;
   text-decoration: none;
-  border-radius: 5px;
-  margin-top: 20px;
+  border: 2px solid #00ff88;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  transition: 0.3s;
+  margin: 0 auto;
+  width: fit-content;
 }
 
 .btn:hover {
-  background: #ff2e7a;
+  background: #00ff88;
+  color: #000;
+  box-shadow: 0 0 30px #00ff88;
 }
 
+/* ===== العناوين ===== */
+h2 {
+  font-size: 48px;
+  color: #00ff88;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  margin-bottom: 50px;
+  position: relative;
+  display: inline-block;
+}
+
+h2::after {
+  content: '';
+  position: absolute;
+  bottom: -15px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80px;
+  height: 3px;
+  background: #00ff88;
+  box-shadow: 0 0 15px #00ff88;
+}
+
+/* ===== الجريد ===== */
 .grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 30px;
-  margin-top: 40px;
+  margin-top: 50px;
 }
 
 .card {
-  background: #111;
-  padding: 30px;
-  border-radius: 10px;
+  background: #1a1a1a;
+  padding: 40px 30px;
   border: 1px solid #333;
+  transition: 0.3s;
+  text-align: left;
+  position: relative;
+  overflow: hidden;
+}
+
+.card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 3px;
+  height: 0;
+  background: #00ff88;
+  transition: 0.3s;
+}
+
+.card:hover {
+  border-color: #00ff88;
+  transform: translateY(-10px);
+  box-shadow: 0 20px 40px rgba(0,255,136,0.1);
+}
+
+.card:hover::before {
+  height: 100%;
 }
 
 .card h3 {
-  font-size: 24px;
+  font-size: 28px;
+  color: #00ff88;
   margin-bottom: 15px;
-  color: #ff4d94;
+  text-transform: uppercase;
+}
+
+.card p {
+  color: #aaa;
+  line-height: 1.6;
+  font-size: 16px;
+}
+
+/* ===== صفحة عني ===== */
+.about p {
+  font-size: 20px;
+  max-width: 800px;
+  margin: 0 auto 40px;
+  line-height: 1.8;
+  color: #ccc;
 }
 
 .stats {
   display: flex;
   justify-content: center;
-  gap: 50px;
-  margin-top: 40px;
+  gap: 80px;
+  margin-top: 50px;
+}
+
+.stats div {
+  font-size: 32px;
+  font-weight: 900;
+  color: #00ff88;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.stats div span {
+  font-size: 16px;
+  color: #aaa;
+  font-weight: normal;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/* ===== صفحة التواصل ===== */
+.contact p {
+  font-size: 20px;
+  margin: 20px 0;
+  color: #fff;
+}
+
+.contact p:first-of-type {
   font-size: 24px;
-  color: #ff4d94;
+  color: #00ff88;
 }
 
 .whatsapp {
-  background: #25D366;
+  border-color: #00ff88;
+  color: #00ff88;
+  margin-top: 30px;
 }
 
+.whatsapp:hover {
+  background: #00ff88;
+  color: #000;
+}
+
+/* ===== الفوتر ===== */
 footer {
   text-align: center;
   padding: 30px;
-  background: #111;
+  background: #1a1a1a;
+  border-top: 1px solid #333;
   color: #666;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/* ===== التجاوب ===== */
+@media (max-width: 992px) {
+  h1 {
+    font-size: 60px;
+  }
+  
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 @media (max-width: 768px) {
+  nav {
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .nav-links a {
+    margin: 0 10px;
+  }
+  
+  h1 {
+    font-size: 40px;
+    letter-spacing: 3px;
+  }
+  
+  h2 {
+    font-size: 36px;
+  }
+  
   .grid {
     grid-template-columns: 1fr;
   }
   
   .stats {
     flex-direction: column;
-    gap: 20px;
+    gap: 30px;
   }
   
-  h1 {
-    font-size: 40px;
+  section {
+    padding: 60px 5%;
   }
 }
