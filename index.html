@@ -1,16 +1,17 @@
+<!-- index.html -->
 <!DOCTYPE html>
-<html lang="ar">
+<html lang="ar" dir="rtl">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>TOJI</title>
+  <title>TOJI - الرئيسية</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <nav>
+  <nav id="navbar">
     <div class="logo">TOJI</div>
     <div class="nav-links">
-      <a href="index.html">الرئيسية</a>
+      <a href="index.html" class="active">الرئيسية</a>
       <a href="about.html">عني</a>
       <a href="projects.html">المشاريع</a>
       <a href="contact.html">تواصل</a>
@@ -19,30 +20,30 @@
 
   <section class="hero">
     <h1>TOJI</h1>
-    <p>مطور ومصمم مواقع</p>
-    <a href="contact.html" class="btn">كلمني</a>
+    <div class="typing" id="typing">مطور مواقع</div>
+    <a href="contact.html" class="btn">ابدأ مشروعك</a>
   </section>
 
-  <section class="services">
-    <h2>خدماتي</h2>
-    <div class="grid">
-      <div class="card">
+  <section>
+    <h2 class="section-title">خدماتي</h2>
+    <div class="services-grid">
+      <div class="service-card">
         <h3>تطوير مواقع</h3>
-        <p>مواقع احترافية بأحدث التقنيات</p>
+        <p>مواقع احترافية متجاوبة مع جميع الاجهزة باستخدام احدث التقنيات</p>
       </div>
-      <div class="card">
+      <div class="service-card">
         <h3>تطبيقات جوال</h3>
-        <p>تطبيقات لأندرويد و iOS</p>
+        <p>تطبيقات عالية الاداء تعمل على اندرويد و iOS بسلاسة</p>
       </div>
-      <div class="card">
+      <div class="service-card">
         <h3>تصميم واجهات</h3>
-        <p>تصاميم عصرية وجذابة</p>
+        <p>تصاميم عصرية تركز على تجربة المستخدم وسهولة الاستخدام</p>
       </div>
     </div>
   </section>
 
   <footer>
-    <p>TOJI © 2024</p>
+    <p>© 2024 TOJI. جميع الحقوق محفوظة</p>
   </footer>
 
   <script src="script.js"></script>
