@@ -5,16 +5,21 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>TOJI - المشاريع</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800&family=Tajawal:wght@400;500;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <nav id="navbar">
     <div class="logo">TOJI</div>
+    <div class="menu-btn">
+      <i class="fas fa-bars"></i>
+    </div>
     <div class="nav-links">
-      <a href="index.html">الرئيسية</a>
-      <a href="about.html">عني</a>
-      <a href="projects.html" class="active">المشاريع</a>
-      <a href="contact.html">تواصل</a>
+      <a href="index.html"><i class="fas fa-home"></i>الرئيسية</a>
+      <a href="about.html"><i class="fas fa-user"></i>عني</a>
+      <a href="projects.html" class="active"><i class="fas fa-code-branch"></i>المشاريع</a>
+      <a href="contact.html"><i class="fas fa-envelope"></i>تواصل</a>
     </div>
   </nav>
 
@@ -22,40 +27,46 @@
     <h2 class="section-title">مشاريعي</h2>
     <div class="projects-grid">
       <div class="project-item">
+        <div class="project-icon"><i class="fas fa-store"></i></div>
         <h3>متجر الكتروني</h3>
-        <div class="tech">HTML - CSS - JS</div>
+        <span class="project-tech">HTML - CSS - JS</span>
         <p>متجر متكامل لبيع الملابس مع سلة مشتريات ولوحة تحكم</p>
       </div>
       <div class="project-item">
+        <div class="project-icon"><i class="fas fa-truck"></i></div>
         <h3>تطبيق توصيل</h3>
-        <div class="tech">React Native</div>
+        <span class="project-tech">React Native</span>
         <p>تطبيق لطلب وتوصيل الطعام مع تتبع الطلب مباشرة</p>
       </div>
       <div class="project-item">
+        <div class="project-icon"><i class="fas fa-building"></i></div>
         <h3>موقع شركة</h3>
-        <div class="tech">WordPress</div>
+        <span class="project-tech">WordPress</span>
         <p>موقع رسمي لشركة عقارات مع نظام ادارة محتوى متكامل</p>
       </div>
       <div class="project-item">
+        <div class="project-icon"><i class="fas fa-graduation-cap"></i></div>
         <h3>منصة تعليمية</h3>
-        <div class="tech">Vue.js - Firebase</div>
+        <span class="project-tech">Vue.js - Firebase</span>
         <p>منصة لدورات البرمجة مع نظام دخول ومتابعة تقدم</p>
       </div>
       <div class="project-item">
+        <div class="project-icon"><i class="fas fa-chart-line"></i></div>
         <h3>لوحة تحكم</h3>
-        <div class="tech">React - Node.js</div>
+        <span class="project-tech">React - Node.js</span>
         <p>نظام ادارة وتحليلات لشركة تسويق الكتروني</p>
       </div>
       <div class="project-item">
+        <div class="project-icon"><i class="fas fa-headphones"></i></div>
         <h3>تطبيق موسيقى</h3>
-        <div class="tech">Flutter</div>
+        <span class="project-tech">Flutter</span>
         <p>تطبيق استماع للموسيقى مع قوائم تشغيل واشعارات</p>
       </div>
     </div>
   </section>
 
   <footer>
-    <p>© 2024 TOJI. جميع الحقوق محفوظة</p>
+    <p><i class="fas fa-code"></i> TOJI <i class="fas fa-heart"></i> 2024</p>
   </footer>
 
   <script src="script.js"></script>
