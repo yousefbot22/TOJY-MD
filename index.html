@@ -4,38 +4,52 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>TOJI - الرئيسية</title>
+  <title>TOJI - الصفحة الرئيسية</title>
+  <!-- تحسين الخطوط العربية -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800&family=Tajawal:wght@400;500;700;800&display=swap" rel="stylesheet">
+  <!-- ايقونات Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <nav id="navbar">
     <div class="logo">TOJI</div>
+    <div class="menu-btn">
+      <i class="fas fa-bars"></i>
+    </div>
     <div class="nav-links">
-      <a href="index.html" class="active">الرئيسية</a>
-      <a href="about.html">عني</a>
-      <a href="projects.html">المشاريع</a>
-      <a href="contact.html">تواصل</a>
+      <a href="index.html" class="active"><i class="fas fa-home"></i>الرئيسية</a>
+      <a href="about.html"><i class="fas fa-user"></i>عني</a>
+      <a href="projects.html"><i class="fas fa-code-branch"></i>المشاريع</a>
+      <a href="contact.html"><i class="fas fa-envelope"></i>تواصل</a>
     </div>
   </nav>
 
   <section class="hero">
     <h1>TOJI</h1>
-    <div class="typing" id="typing">مطور مواقع</div>
-    <a href="contact.html" class="btn">ابدأ مشروعك</a>
+    <div class="typing-container">
+      <span class="typing-text"></span>
+    </div>
+    <a href="contact.html" class="btn"><i class="fas fa-rocket"></i>ابدأ مشروعك</a>
   </section>
 
   <section>
     <h2 class="section-title">خدماتي</h2>
     <div class="services-grid">
       <div class="service-card">
+        <div class="service-icon"><i class="fas fa-code"></i></div>
         <h3>تطوير مواقع</h3>
         <p>مواقع احترافية متجاوبة مع جميع الاجهزة باستخدام احدث التقنيات</p>
       </div>
       <div class="service-card">
+        <div class="service-icon"><i class="fas fa-mobile-alt"></i></div>
         <h3>تطبيقات جوال</h3>
         <p>تطبيقات عالية الاداء تعمل على اندرويد و iOS بسلاسة</p>
       </div>
       <div class="service-card">
+        <div class="service-icon"><i class="fas fa-paint-brush"></i></div>
         <h3>تصميم واجهات</h3>
         <p>تصاميم عصرية تركز على تجربة المستخدم وسهولة الاستخدام</p>
       </div>
@@ -43,7 +57,7 @@
   </section>
 
   <footer>
-    <p>© 2024 TOJI. جميع الحقوق محفوظة</p>
+    <p><i class="fas fa-code"></i> TOJI <i class="fas fa-heart"></i> 2024</p>
   </footer>
 
   <script src="script.js"></script>
