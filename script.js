@@ -1,4 +1,3 @@
-// script.js - النسخة النهائية
 document.addEventListener('DOMContentLoaded', function() {
   
   // ✅ تغيير لون النافذة عند التمرير
@@ -11,12 +10,11 @@ document.addEventListener('DOMContentLoaded', function() {
     }
   });
 
-  // ✅ قائمة الهامبرغر - مضبوطة 100%
+  // ✅ قائمة الهامبرغر
   const menuBtn = document.querySelector('.menu-btn');
   const navLinks = document.querySelector('.nav-links');
   
   if (menuBtn) {
-    // فتح/غلق القائمة
     menuBtn.addEventListener('click', function(e) {
       e.preventDefault();
       e.stopPropagation();
@@ -32,7 +30,6 @@ document.addEventListener('DOMContentLoaded', function() {
       }
     });
     
-    // غلق القائمة عند الضغط على رابط
     navLinks.querySelectorAll('a').forEach(link => {
       link.addEventListener('click', function() {
         navLinks.classList.remove('show');
@@ -42,7 +39,6 @@ document.addEventListener('DOMContentLoaded', function() {
       });
     });
     
-    // غلق القائمة عند الضغط براها
     document.addEventListener('click', function(e) {
       if (!navLinks.contains(e.target) && !menuBtn.contains(e.target)) {
         navLinks.classList.remove('show');
@@ -55,7 +51,7 @@ document.addEventListener('DOMContentLoaded', function() {
     });
   }
 
-  // ✅ تأثير الكتابة - للصفحة الرئيسية
+  // ✅ تأثير الكتابة
   const typingText = document.querySelector('.typing-text');
   if (typingText) {
     const texts = ['مطور مواقع', 'مصمم واجهات', 'مطور تطبيقات'];
